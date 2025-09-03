@@ -170,6 +170,14 @@
   font-weight: bold;
 }
 
+.card-status.highlight {
+  color: var(--primary-green);
+  border-color: var(--primary-green);
+  background: rgba(0, 255, 65, 0.2);
+  animation: pulse-glow 2s infinite;
+  text-shadow: 0 0 5px currentColor;
+}
+
 /* Features Section */
 .features-section {
   margin: var(--spacing-xxl) 0;
@@ -232,19 +240,36 @@
 }
 
 .cta-description {
-  font-size: var(--font-size-normal);
+  font-size: var(--font-size-large);
   color: var(--secondary-green);
   margin: 0 0 var(--spacing-xl);
-  max-width: 500px;
+  max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  line-height: 1.7;
+}
+
+.cta-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-md);
 }
 
 .cta-button {
   font-size: var(--font-size-large);
-  padding: var(--spacing-md) var(--spacing-xl);
+  padding: var(--spacing-lg) var(--spacing-xxl);
   letter-spacing: 1px;
   font-weight: bold;
+  text-decoration: none;
+}
+
+.cta-subtext {
+  color: var(--secondary-green);
+  font-size: var(--font-size-small);
+  margin: 0;
+  opacity: 0.8;
+  letter-spacing: 0.5px;
 }
 
 /* Responsive Design */

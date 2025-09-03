@@ -1,4 +1,4 @@
-npm run # ASAI - AI System Assistance Interface
+# ASAI - AI System Assistance Interface
 
 A retro-styled web application that teaches beginners how to effectively prompt and work with AI coding assistants.
 

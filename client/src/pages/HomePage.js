@@ -38,38 +38,41 @@ const HomePage = () => {
 
         {/* Quick Start Section */}
         <section className="quick-start-section">
-          <h3 className="section-title">
-            <span className="title-bracket">[</span>
-            QUICK START PROTOCOL
-            <span className="title-bracket">]</span>
-          </h3>
-          <div className="quick-start-grid">
-            <Link to="/project-selector" className="quick-start-card retro-screen">
-              <div className="card-icon">▣</div>
-              <h4 className="card-title">SELECT PROJECT</h4>
-              <p className="card-description">
-                Choose your project type and get tailored assistance
-              </p>
-              <div className="card-status">STEP 1</div>
-            </Link>
+          <div className="visual-separator">
+            <span>QUICK START PROTOCOL</span>
+          </div>
+          <div className="highlight-box">
+            <h3 className="important-text" style={{textAlign: 'center', marginBottom: 'var(--spacing-lg)'}}>
+              Start Your AI Collaboration Journey
+            </h3>
+            <div className="quick-start-grid">
+              <Link to="/project-selector" className="quick-start-card retro-screen pulse">
+                <div className="card-icon">▣</div>
+                <h4 className="card-title">1. SELECT PROJECT TYPE</h4>
+                <p className="card-description">
+                  Choose your project type to get tailored AI assistance strategies
+                </p>
+                <div className="card-status highlight">START HERE</div>
+              </Link>
 
-            <Link to="/template-generator" className="quick-start-card retro-screen">
-              <div className="card-icon">≡</div>
-              <h4 className="card-title">GENERATE PROMPTS</h4>
-              <p className="card-description">
-                Get optimized prompt templates for your needs
-              </p>
-              <div className="card-status">STEP 2</div>
-            </Link>
+              <Link to="/template-generator" className="quick-start-card retro-screen">
+                <div className="card-icon">≡</div>
+                <h4 className="card-title">2. GENERATE PROMPTS</h4>
+                <p className="card-description">
+                  Get proven prompt templates that actually work
+                </p>
+                <div className="card-status">STEP 2</div>
+              </Link>
 
-            <Link to="/workflow" className="quick-start-card retro-screen">
-              <div className="card-icon">→</div>
-              <h4 className="card-title">FOLLOW WORKFLOW</h4>
-              <p className="card-description">
-                Execute proven AI collaboration strategies
-              </p>
-              <div className="card-status">STEP 3</div>
-            </Link>
+              <Link to="/workflow" className="quick-start-card retro-screen">
+                <div className="card-icon">→</div>
+                <h4 className="card-title">3. FOLLOW WORKFLOW</h4>
+                <p className="card-description">
+                  Execute systematic AI collaboration strategies
+                </p>
+                <div className="card-status">STEP 3</div>
+              </Link>
+            </div>
           </div>
         </section>
 
@@ -109,14 +112,20 @@ const HomePage = () => {
 
         {/* Call to Action */}
         <section className="cta-section">
-          <div className="cta-content retro-screen">
-            <h3 className="cta-title">INITIALIZE YOUR AI COLLABORATION JOURNEY</h3>
+          <div className="cta-content retro-screen highlight-box">
+            <h3 className="cta-title important-text">READY TO MASTER AI COLLABORATION?</h3>
             <p className="cta-description">
-              Ready to transform how you work with AI coding assistants?
+              Stop struggling with unclear prompts. Learn the systematic approach that actually works.
+              Start with your project type and get immediate, actionable guidance.
             </p>
-            <Link to="/project-selector" className="btn btn-primary cta-button">
-              START MISSION →
-            </Link>
+            <div className="cta-actions">
+              <Link to="/project-selector" className="btn btn-primary btn-large btn-highlight cta-button">
+                🚀 BEGIN LEARNING JOURNEY
+              </Link>
+              <p className="cta-subtext">
+                No signup required • Immediate access • Proven strategies
+              </p>
+            </div>
           </div>
         </section>
       </div>
