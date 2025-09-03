@@ -1,0 +1,302 @@
+/* Troubleshooting Styles */
+.troubleshooting-page {
+  min-height: calc(100vh - 200px);
+  padding: var(--spacing-lg) 0;
+}
+
+.troubleshooting-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+/* Category Filter */
+.category-filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.filter-buttons {
+  display: flex;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filter-btn {
+  padding: var(--spacing-sm) var(--spacing-lg);
+  background: transparent;
+  border: 1px solid var(--secondary-green);
+  color: var(--secondary-green);
+  font-family: var(--font-main);
+  font-size: var(--font-size-small);
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: var(--border-radius);
+}
+
+.filter-btn:hover {
+  border-color: var(--primary-green);
+  color: var(--primary-green);
+  box-shadow: 0 0 5px rgba(0, 255, 65, 0.3);
+}
+
+.filter-btn.active {
+  background: var(--primary-green);
+  color: var(--background-black);
+  border-color: var(--primary-green);
+  box-shadow: 0 0 10px rgba(0, 255, 65, 0.4);
+}
+
+/* Issues Section */
+.issues-section {
+  margin-bottom: var(--spacing-xl);
+}
+
+.issues-grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.issue-card {
+  background: var(--secondary-black);
+  padding: var(--spacing-xl);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid var(--secondary-green);
+}
+
+.issue-card:hover {
+  border-color: var(--primary-green);
+  box-shadow: 0 5px 20px rgba(0, 255, 65, 0.15);
+}
+
+.issue-card.expanded {
+  border-color: var(--primary-green);
+  background: linear-gradient(135deg, var(--secondary-black) 0%, rgba(0, 255, 65, 0.03) 100%);
+  box-shadow: 0 0 15px rgba(0, 255, 65, 0.2);
+}
+
+/* Issue Header */
+.issue-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.issue-title {
+  font-size: var(--font-size-large);
+  color: var(--primary-green);
+  margin: 0;
+  letter-spacing: 1px;
+  flex: 1;
+}
+
+.issue-meta {
+  display: flex;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+}
+
+.difficulty-badge,
+.category-badge {
+  font-size: var(--font-size-small);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border: 1px solid;
+  border-radius: var(--border-radius);
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.difficulty-badge.beginner {
+  color: var(--primary-green);
+  border-color: var(--primary-green);
+}
+
+.difficulty-badge.intermediate {
+  color: var(--warning-amber);
+  border-color: var(--warning-amber);
+}
+
+.difficulty-badge.advanced {
+  color: var(--error-red);
+  border-color: var(--error-red);
+}
+
+.category-badge {
+  color: var(--info-cyan);
+  border-color: var(--info-cyan);
+}
+
+/* Issue Content */
+.issue-description {
+  color: var(--secondary-green);
+  margin: 0 0 var(--spacing-md);
+  line-height: 1.6;
+}
+
+.symptoms-preview {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--secondary-green);
+  font-size: var(--font-size-small);
+  padding: var(--spacing-sm) 0;
+  border-top: 1px solid var(--tertiary-black);
+}
+
+.symptom-count {
+  color: var(--primary-green);
+  font-weight: bold;
+}
+
+/* Issue Details */
+.issue-details {
+  margin-top: var(--spacing-lg);
+  padding-top: var(--spacing-lg);
+  border-top: 2px solid var(--tertiary-black);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.detail-title {
+  font-size: var(--font-size-normal);
+  color: var(--primary-green);
+  margin: 0 0 var(--spacing-md);
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+/* Symptoms */
+.symptoms-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.symptom-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-sm);
+  color: var(--secondary-green);
+  line-height: 1.5;
+}
+
+.symptom-bullet {
+  color: var(--warning-amber);
+  font-weight: bold;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+/* Prompt Section */
+.prompt-container {
+  background: var(--background-black);
+  border: 1px solid var(--secondary-green);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.prompt-text {
+  padding: var(--spacing-lg);
+  margin: 0;
+  color: var(--primary-green);
+  font-family: var(--font-main);
+  font-size: var(--font-size-small);
+  line-height: 1.6;
+  white-space: pre-wrap;
+  background: var(--background-black);
+  border: none;
+  overflow-x: auto;
+}
+
+.copy-btn {
+  margin: var(--spacing-md);
+  width: calc(100% - 2 * var(--spacing-md));
+}
+
+/* Solutions */
+.solutions-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.solution-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-sm);
+  color: var(--secondary-green);
+  line-height: 1.5;
+}
+
+.solution-bullet {
+  color: var(--primary-green);
+  font-weight: bold;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .issue-header {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+  
+  .issue-meta {
+    align-self: flex-start;
+  }
+  
+  .symptoms-preview {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-xs);
+  }
+  
+  .filter-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .filter-btn {
+    width: 200px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .issue-card {
+    padding: var(--spacing-lg);
+  }
+  
+  .issue-details {
+    gap: var(--spacing-lg);
+  }
+  
+  .prompt-text {
+    padding: var(--spacing-md);
+    font-size: 0.8rem;
+  }
+  
+  .copy-btn {
+    margin: var(--spacing-sm);
+    width: calc(100% - 2 * var(--spacing-sm));
+  }
+}

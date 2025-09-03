@@ -1,0 +1,8 @@
+/* Reset and base styles - minimal since App.css handles main styling */
+html {
+  font-size: 16px;
+}
+
+code {
+  font-family: 'Courier Prime', 'Courier New', monospace;
+}
